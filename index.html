@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Switch to Linux</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f2937, #111827);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      color: #9ca3af;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #161b22;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      color: #60a5fa;
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    code {
+      background-color: #1e293b;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+
+    .image-banner {
+      width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+      display: block;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #0f172a;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      max-width: 280px;
+      flex: 1 1 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+    }
+
+    .card h3 {
+      color: #93c5fd;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .small-logo {
+      max-width: 150px;
+      display: block;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .medium-logo {
+      max-width: 400px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .small-card {
+      max-width: 220px;
+      margin: 1rem auto 2rem auto;
+      text-align: center;
+      background-color: #0f172a;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* New styles for heading with logo */
+    .heading-with-logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .heading-with-logo h2 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .heading-with-logo .small-logo {
+      max-width: 60px;
+      height: auto;
+      margin: 0; /* Remove margin overrides */
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Why You Should Switch to Linux</h1>
+    <p>Escape Windows. Take control of your computer.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Tux the Penguin" width="120" />
+  </header>
+
+  <section>
+    <h2>Top Reasons to Switch</h2>
+    <div class="flex-row">
+      <div class="card">
+        <h3>More Control</h3>
+        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ThcUO3jZo_VMdOOCu3h1Sg.png" alt="Command Line">
+        <p>No forced updates or pre-installed junk software.</p>
+      </div>
+      <div class="card">
+        <h3>Better Performance</h3>
+        <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1800,h_1012/https://assets.ubuntu.com/v1/622b4fe1-numpy-numbat-on-dell-xps-13.jpg" alt="Performance">
+        <p>Linux runs faster on both old and new machines.</p>
+      </div>
+      <div class="card">
+        <h3>Gaming Support</h3>
+        <img src="https://www.gamingonlinux.com/uploads/articles/tagline_images/2859495id5442gol.jpg" alt="Steam Logo">
+        <p>Steam Deck, Proton, and Lutris make Linux gaming real.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="heading-with-logo">
+      <h2>How to Switch to Linux Mint</h2>
+      <img src="https://distrosea.com/distro-icons/linuxmint.svg" alt="Linux Mint Logo" class="small-logo" />
+    </div>
+    <ol>
+      <li><strong>Download Linux Mint:</strong> Visit the <a href="https://linuxmint.com/download.php" target="_blank">Linux Mint download page</a> and download <strong>Cinnamon</strong>.</li>
+      <li><strong>Flash it to a USB drive:</strong>
+        <ul>
+          <li>Download <a href="https://www.balena.io/etcher/" target="_blank">Balena Etcher</a>.</li>
+          <li>Select the Linux Mint ISO, your USB, then click "Flash".</li>
+        </ul>
+      </li>
+      <li><strong>Enter BIOS:</strong> Restart and press <code>F2</code>, <code>DEL</code>, or <code>ESC</code> repeatedly.</li>
+      <img src="https://www.partitionwizard.com/images/uploads/articles/2020/07/toshiba-boot-menu/toshiba-boot-menu-1.png" alt="Bios boot menu" class="image-banner" style="max-width: 400px">
+      <li><strong>Boot from USB:</strong> Select the USB drive as your boot device.</li>
+      <li><strong>Try Linux Mint:</strong> You can live boot without installing.</li>
+      <li><strong>Install:</strong> Click "Install Linux Mint" on the desktop.</li>
+      <strong>Tada!</strong> Congratulations on installing a new revolution of computing
+      <img src="https://www.linuxmint.com/pictures/screenshots/xia/cinnamon.png" alt="Linux Mint Boot Menu" class="image-banner" style="max-width: 400px">
+    </ol>
+  </section>
+
+  <section>
+    <h2>Need Help?</h2>
+    <ul>
+      <li>Message me! @print_psyduck on Discord</li>
+      <li><a href="https://www.reddit.com/r/linux4noobs/" target="_blank">Reddit: r/linux4noobs</a></li>
+      <li><a href="https://forums.linuxmint.com/" target="_blank">Linux Mint Forums</a></li>
+      <li><a href="https://discord.gg/linux" target="_blank">Linux Discord Communities</a></li>
+    </ul>
+  </section>
+
+  <div class="footer">
+    Made with ❤️ by a Michael fan. Powered by freedom.
+  </div>
+
+</body>
+</html>
